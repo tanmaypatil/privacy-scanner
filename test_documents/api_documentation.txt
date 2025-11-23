@@ -1,0 +1,53 @@
+API Documentation - File Upload Endpoint
+
+Version: 2.1
+Last Updated: October 2024
+
+Overview:
+The File Upload API allows users to upload documents to the platform securely.
+
+Endpoint: POST /api/v2/files/upload
+
+Authentication Required: Yes (Bearer Token)
+
+Request Headers:
+- Content-Type: multipart/form-data
+- Authorization: Bearer {access_token}
+
+Request Parameters:
+- file (required): Binary file data
+- category (optional): Document category
+- tags (optional): Comma-separated tags
+- description (optional): File description
+
+Response Format (Success):
+{
+  "status": "success",
+  "file_id": "uuid-string",
+  "filename": "document.pdf",
+  "size_bytes": 2048576,
+  "upload_timestamp": "2024-11-10T14:30:00Z"
+}
+
+Response Format (Error):
+{
+  "status": "error",
+  "error_code": "FILE_TOO_LARGE",
+  "message": "File size exceeds 10MB limit"
+}
+
+Rate Limits:
+- 100 uploads per hour per user
+- Maximum file size: 10MB
+
+Example Usage:
+curl -X POST https://api.company.com/v2/files/upload \
+  -H "Authorization: Bearer your_token_here" \
+  -F "file=@document.pdf" \
+  -F "category=invoices"
+
+Error Codes:
+- FILE_TOO_LARGE: File exceeds size limit
+- INVALID_FORMAT: Unsupported file type
+- QUOTA_EXCEEDED: Storage quota reached
+- AUTH_FAILED: Invalid or expired token

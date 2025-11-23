@@ -1,0 +1,29 @@
+[SENSITIVE - INTERNAL ONLY]
+
+Employee Performance Review - 2024
+
+Employee ID: EMP-10457
+Name: Sarah Johnson
+Department: Platform Engineering
+Review Period: January - October 2024
+
+Performance Ratings:
+- Technical Skills: 4.5/5
+- Team Collaboration: 5/5
+- Project Delivery: 4/5
+- Leadership: 4.5/5
+
+Key Achievements:
+- Led migration to Kubernetes infrastructure
+- Mentored 3 junior developers
+- Reduced deployment time by 40%
+
+Areas for Development:
+- Public speaking and presentation skills
+- Strategic planning involvement
+
+Salary Adjustment Recommendation: 8% increase
+Promotion Recommendation: Senior Engineer Level 2
+
+Manager: Michael Chen
+Review Date: November 5, 2024
