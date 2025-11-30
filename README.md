@@ -22,7 +22,7 @@ python -m py_compile file_scanner_mcp.py
 
 **Option 1: With MCP Inspector (Recommended for testing)**
 ```bash
-npx @modelcontextprotocol/inspector python file_scanner_mcp.py
+npx @modelcontextprotocol/inspector python3 file_scanner_mcp.py
 ```
 
 **Option 2: Standalone (stdio transport)**
